@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Today</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<body>
+<div class="container">
+  <h1>Weather App</h1>
+  <h3>Erik Georgievski</h3>
+
+  <form id="search-city">
+    <input
+       type="text" id="search-bar" placeholder="Enter city name"/>
+      <button type="submit" id="search-btn">Search</button>
+  </form>
+  <div>
+    
+    <img id="weather-icon" />
+  </div>
+
+  <div id="current-weather">
+    <h2>Current Weather</h2>
+    <div id="weather-details">
+      <div>
+        <h3>Temperature</h3>
+        <p id="temperature" class="value"></p>
+      </div>
+      <div>
+        <h3>Condition</h3>
+        <p id="condition" class="value"></p>
+      </div>
+      <div class="city">
+        <h3>Location</h3>
+        <p id="location" class="value"></p>
+      </div>
+      <div>
+        <h3>Latitude</h3>
+        <p id="latitude" class="value"></p>
+      </div>
+      <div>
+        <h3>Longitude</h3>
+        <p id="longitude" class="value"></p>
+      </div>
+      <div>
+        <h3>Wind Speed</h3>
+        <p id="wind-speed" class="value"></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="weather-forecast">
+    <h2>Weather Forecast</h2>
+    <form id="weather-time">
+      <input type="number" id="time" placeholder="3 hour intervals" />
+      <button type="submit" class="search">Search </button>
+    </form>
+    <div id="time-weather"></div>
+  </div>
+</div>
+    
+</body>
+</html>
